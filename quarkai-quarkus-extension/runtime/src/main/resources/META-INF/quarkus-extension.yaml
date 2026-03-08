@@ -1,0 +1,18 @@
+name: quarkai-quarkus-extension
+metadata:
+  short-name: quarkai
+  keywords:
+    - ai
+    - llm
+    - openai
+    - anthropic
+    - vertex
+    - ollama
+    - rag
+  description: CDI-first, reactive-first AI abstraction layer for Quarkus
+  guide: https://quarkiverse.github.io/quarkiverse-docs/quarkai/dev/
+  categories:
+    - integration
+  status: experimental
+  config:
+    - quarkai

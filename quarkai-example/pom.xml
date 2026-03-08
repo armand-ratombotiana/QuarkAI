@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>io.quarkiverse.quarkai</groupId>
+    <artifactId>quarkai-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>quarkai-example</artifactId>
+  <name>QuarkAI :: Example Application</name>
+  <description>Example Quarkus application demonstrating QuarkAI features</description>
+
+  <dependencies>
+    <!-- Quarkus core -->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-resteasy-reactive-jackson</artifactId>
+    </dependency>
+
+    <!-- QuarkAI extension -->
+    <dependency>
+      <groupId>io.quarkiverse.quarkai</groupId>
+      <artifactId>quarkai-quarkus-extension-runtime</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <!-- All providers -->
+    <dependency>
+      <groupId>io.quarkiverse.quarkai</groupId>
+      <artifactId>quarkai-openai</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkiverse.quarkai</groupId>
+      <artifactId>quarkai-anthropic</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkiverse.quarkai</groupId>
+      <artifactId>quarkai-vertex</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkiverse.quarkai</groupId>
+      <artifactId>quarkai-ollama</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <!-- RAG support -->
+    <dependency>
+      <groupId>io.quarkiverse.quarkai</groupId>
+      <artifactId>quarkai-rag</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <!-- Vert.x integration -->
+    <dependency>
+      <groupId>io.quarkiverse.quarkai</groupId>
+      <artifactId>quarkai-vertx</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <!-- Health checks and metrics -->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-smallrye-health</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-micrometer-registry-prometheus</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-maven-plugin</artifactId>
+        <version>${quarkus.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>build</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

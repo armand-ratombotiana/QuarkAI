@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mvn test:*)",
+      "Bash(java:*)",
+      "Bash(mvn clean test:*)",
+      "Bash(\"/c/Users/judic/scoop/apps/maven/current/bin/mvn\" --version)",
+      "Bash(cmd.exe /c \"C:\\\\Users\\\\judic\\\\scoop\\\\apps\\\\maven\\\\current\\\\bin\\\\mvn.cmd\" --version)",
+      "Bash(cmd.exe /c \"C:\\\\Users\\\\judic\\\\scoop\\\\apps\\\\maven\\\\current\\\\bin\\\\mvn.cmd clean test -B\")",
+      "Bash(powershell.exe -Command \"cd quarkai-core; C:\\\\Users\\\\judic\\\\scoop\\\\apps\\\\maven\\\\current\\\\bin\\\\mvn.cmd clean test -B\")",
+      "Bash(powershell.exe -Command \"ls ''C:\\\\Users\\\\judic\\\\scoop\\\\apps\\\\maven''\")",
+      "Bash(powershell.exe -Command \"ls ''C:\\\\Users\\\\judic\\\\scoop\\\\apps\\\\maven\\\\3.9.12''\")",
+      "Bash(powershell.exe -Command \"& ''C:\\\\Users\\\\judic\\\\scoop\\\\apps\\\\maven\\\\3.9.12\\\\bin\\\\mvn.cmd'' --version\")",
+      "Bash(powershell.exe -Command \"Test-Path ''C:\\\\Users\\\\judic\\\\scoop\\\\apps\\\\maven\\\\3.9.12\\\\bin\\\\mvn.cmd''\")",
+      "Bash(powershell.exe -Command \"ls ''C:\\\\Users\\\\judic\\\\scoop\\\\apps\\\\maven\\\\3.9.12\\\\bin''\")",
+      "Bash(powershell.exe -Command:*)"
+    ]
+  }
+}
